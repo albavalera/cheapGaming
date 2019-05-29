@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Proto';
+    src: url('../fonts/FacileSans.otf');
+}
+@font-face {
+    font-family: 'Suissnord';
+    src: url('../fonts/Suissnord.otf');
+}
+@font-face {
+    font-family: 'mirror';
+    src: url('../fonts/mirror.otf');
+}
+html body{
+    font-family:'mirror';
+    font-weight: 100px;
+    height: 100%;
+    margin: 0;
+    /* background-image: linear-gradient(to  right, #0d0001,#982727,#450007);    
+        background-image: linear-gradient(to right, rgba( 107,22 22,0),rgba(173,43,43,1);
+    
+    */
+    background-image: linear-gradient(to  right, #450007,#6f0c16,#982727,#982727,#6f0c16,#450007);    
+    background-size:cover;    
+    color:white;
+
+
+}
+
+
+.inside_td{
+    border-top-style:solid;
+    border-top-color:#ff9999;
+
+}
+.container-EmptyCart  {
+    font-size: 20px;
+    background-image: linear-gradient(to bottom , #fff,#fff);              
+    background-size:cover;  
+    text-align: center;
+    width: 60%;
+    color:black;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto;
+    border-radius: 10px;
+
+}
+.card{
+    color:black;
+    width:50%; 
+    margin-left:25%;   
+}
+.card-text{
+    text-align: right;
+}
+p{
+    display:inline-block ;
+}
+.Precio{
+    float: right;
+    width: 20%;
+}
+.Cantidad{
+    float: right;
+    width: 20%;
+}
+.title-price{
+    display: inline;
+    text-align: right;
+    float: right;
+    margin-right: 13%; 
+    font-size: 17px;
+    color:grey;
+}
+
+.Precio-total{
+    background-image: linear-gradient(to bottom , #fff,#fff);              
+    margin:1%;
+    margin-right: 10%;
+    height:250px;
+    float:right;
+    color:black;
+    border-radius: 3px;
+    width: 10%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Precio-total p {
+        font-size: 17px;
+        margin-top: 10px;
+}
+
+
+.Precio-total a {
+    margin-top:40px;
+    font-size: 15px;
+}
+

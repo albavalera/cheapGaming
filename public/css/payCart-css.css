@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Proto';
+    src: url('../fonts/FacileSans.otf');
+}
+@font-face {
+    font-family: 'Suissnord';
+    src: url('../fonts/Suissnord.otf');
+}
+@font-face {
+    font-family: 'mirror';
+    src: url('../fonts/mirror.otf');
+}
+html body{
+    font-family:'Suissnord';
+    font-weight: 100px;
+    height: 100%;
+    margin: 0;
+    /* background-image: linear-gradient(to  right, #0d0001,#982727,#450007);    
+        background-image: linear-gradient(to right, rgba( 107,22 22,0),rgba(173,43,43,1);
+    */
+    background-image: linear-gradient(to  right, #450007,#6f0c16,#982727,#982727,#6f0c16,#450007);    
+    background-size:cover;    
+    color:white;
+}
+h2{
+  font-family:'mirror';
+
+}
+
+table{
+    font-family:'mirror';
+    width: 100%;
+}
+
+.card{
+    color:black;
+    width:60%; 
+    margin-left:20%; 
+      font-family:'mirror';
+}
+
+tr{ 
+}
+
+.btn{
+ width: 150px;
+ 
+}
+td{
+    width: 3%;
+    text-align: left;
+}
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/laragon/www/CheapGaming/app/Http/Controllers/JuegoController.php</file>
+            <file>file:/C:/laragon/www/CheapGaming/public/css/PC-css.css</file>
+            <file>file:/C:/laragon/www/CheapGaming/.env</file>
+            <file>file:/C:/laragon/www/CheapGaming/app/Http/Controllers/PayController.php</file>
+            <file>file:/C:/laragon/www/CheapGaming/resources/views/layouts/app.blade.php</file>
+            <file>file:/C:/laragon/www/CheapGaming/routes/web.php</file>
+            <file>file:/C:/laragon/www/CheapGaming/resources/views/home.blade.php</file>
+            <file>file:/C:/laragon/www/CheapGaming/app/Juego.php</file>
+            <file>file:/C:/laragon/www/CheapGaming/resources/views/viewBuyGames.blade.php</file>
+            <file>file:/C:/laragon/www/CheapGaming/public/js/viewBuyGames.js</file>
+            <file>file:/C:/laragon/www/CheapGaming/public/css/Cart-css.css</file>
+            <file>file:/C:/laragon/www/CheapGaming/resources/views/viewCart.blade.php</file>
+            <file>file:/C:/laragon/www/CheapGaming/resources/views/mails/demo.blade.php</file>
+            <file>file:/C:/laragon/www/CheapGaming/resources/views/payCart.blade.php</file>
+            <file>file:/C:/laragon/www/CheapGaming/public/css/payCart-css.css</file>
+            <file>file:/C:/laragon/www/CheapGaming/app/Comment.php</file>
+            <file>file:/C:/laragon/www/CheapGaming/app/Http/Controllers/CommentsController.php</file>
+            <file>file:/C:/laragon/www/CheapGaming/resources/views/welcome.blade.php</file>
+            <file>file:/C:/laragon/www/CheapGaming/public/css/Origin-css.css</file>
+        </group>
+    </open-files>
+</project-private>
