@@ -62,7 +62,7 @@
                                        <a class="dropdown-item" href="{{ route('cart.show') }}">
                                        <i class="fas fa-shopping-cart"></i> Mi carro
                                     </a>
-                                      <a class="dropdown-item" href="{{ route('logout') }}">
+                                      <a class="dropdown-item" href="{{ route('profile.show') }}">
                                       <i class="fas fa-user"></i> Perfil
                                     </a>
                                     

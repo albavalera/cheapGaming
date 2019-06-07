@@ -11,11 +11,5 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     
-    /* public function show() {
-       
-       $user = Auth::user()->name;
-       $email = Auth::user()->email;
-        return view('profileUser', ['name' => $user, 'email' => $email]);
-    }*/
 }
 

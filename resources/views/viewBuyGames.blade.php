@@ -59,7 +59,27 @@
                     {!!$juego->Vidurl!!}
 
                 </div>
-
+                <hr>
+                <form method="POST" action="{{ route('comment.store') }}">
+                    @csrf
+                    <input type="hidden" name="juego_id" value="{{ $juego->id }}"/>
+                    <textarea name="body" placeholder="Introduce un comentario"></textarea>
+                    <div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </form>
+                
+                @include('layouts.errors')
+                
+                <div class="commentBox">
+                    @foreach($juego->comments as $comment)
+                    <div class="card-body"><strong>{{$comment->user->name}}</strong>
+                        <p>{{ $comment->created_at->diffForHumans() }} &nbsp;&nbsp; {{ $comment->body }}</p>
+                    </div>
+                    @endforeach
+                    
+                </div>
+  
 
 
 

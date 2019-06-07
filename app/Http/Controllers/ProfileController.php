@@ -2,15 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Comment;
 use Illuminate\Http\Request;
-use App\Juego;
+use Illuminate\Support\Facades\Auth;
 
-class CommentsController extends Controller
+class ProfileController extends Controller
 {
-    public function __construct() {
-        $this->middleware('auth');
-    }
     /**
      * Display a listing of the resource.
      *
@@ -28,8 +24,7 @@ class CommentsController extends Controller
      */
     public function create()
     {
-       return view('viewBuyGames');
-
+        //
     }
 
     /**
@@ -40,57 +35,59 @@ class CommentsController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request->juego_id);
-        $request->validate([
-           'body' => 'required|min:2', 
-        ]);
-        $juego = Juego::findOrFail($request->juego_id);
-        $juego->addComment($request->body);
-        
-        return redirect()->route('juego.show', $juego->id);
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Comment  $comment
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Comment $comment)
+    public function show()
     {
-        //
+        $user = Auth::user();
+        return view('profileUser', compact('user'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Comment  $comment
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Comment $comment)
+    public function edit()
     {
-        //
+        $user = Auth::user();
+        return view('profileUpdate', compact('user'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Comment  $comment
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comment $comment)
+    public function update(Request $request)
     {
-        //
+        $user = Auth::user();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = $request->password;
+        $user->phone = $request->phone;
+        $user->save();
+        
+        return redirect()->route('profile.show');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Comment  $comment
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Comment $comment)
+    public function destroy($id)
     {
         //
     }
